@@ -7,34 +7,34 @@ import NewCertPage from "./views/newcert";
 
 class App extends React.Component {
 
-  navbar = function () {
-    return (
-      <Navbar>
-        <Container>
-          <NavbarBrand href="/">BlockCert</NavbarBrand>
-          <Nav className="me-auto">
-            <Nav.Link href="/keygen">Generate Keys</Nav.Link>
-            <Nav.Link href="/newcert">Create Certificate</Nav.Link>
-            <Nav.Link href="/verifycert">Verify Signature</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-    );
-  }
+	navbar = function () {
+		return (
+			<Navbar>
+				<Container>
+					<NavbarBrand href="/">BlockCert</NavbarBrand>
+					<Nav className="me-auto">
+						<Nav.Link href="/keygen">Generate Keys</Nav.Link>
+						<Nav.Link href="/newcert">Create Certificate</Nav.Link>
+						<Nav.Link href="/verifycert">Verify Signature</Nav.Link>
+					</Nav>
+				</Container>
+			</Navbar>
+		);
+	}
 
-  render() {
-    return (
-      <Router>
-        <this.navbar></this.navbar>
-        <Switch>
-          <Route path="/keygen"><KeyGenPage/></Route>
-          <Route path="/newcert"><NewCertPage/></Route>
-          <Route path="/verifycert"><h1>verifycert</h1></Route>
-          <Route path="/"><h1>home</h1></Route>
-        </Switch>
-      </Router>
-    );
-  }
+	render() {
+		return (
+			<Router>
+				<this.navbar></this.navbar>
+				<Switch>
+					<Route path="/keygen"><KeyGenPage /></Route>
+					<Route path="/newcert"><NewCertPage /></Route>
+					<Route path="/verifycert"><h1>verifycert</h1></Route>
+					<Route path="/"><h1>home</h1></Route>
+				</Switch>
+			</Router>
+		);
+	}
 }
 
 export default App;
