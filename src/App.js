@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import KeyGenPage from './views/keygen';
 import NewCertPage from "./views/newcert";
+import VerifyCertPage from "./views/verifycert";
 
 class App extends React.Component {
 
@@ -29,7 +30,7 @@ class App extends React.Component {
 				<Switch>
 					<Route path="/keygen"><KeyGenPage /></Route>
 					<Route path="/newcert"><NewCertPage /></Route>
-					<Route path="/verifycert"><h1>verifycert</h1></Route>
+					<Route path="/verifycert"><VerifyCertPage /></Route>
 					<Route path="/"><h1>home</h1></Route>
 				</Switch>
 			</Router>
