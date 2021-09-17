@@ -31,7 +31,11 @@ class App extends React.Component {
 					<Route path="/keygen"><KeyGenPage /></Route>
 					<Route path="/newcert"><NewCertPage /></Route>
 					<Route path="/verifycert"><VerifyCertPage /></Route>
-					<Route path="/"><h1>home</h1></Route>
+					<Route path="/"><Container>
+						<h1>
+							BlockCert: Blockchain based certificates
+						</h1>
+						</Container></Route>
 				</Switch>
 			</Router>
 		);
