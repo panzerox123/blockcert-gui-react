@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Container } from 'react-bootstrap';
+import { Button, Container, FormControl } from 'react-bootstrap';
 import axios from 'axios';
 
 class KeyGenPage extends React.Component {
@@ -34,9 +34,9 @@ class KeyGenPage extends React.Component {
 				</p>
 				<Button onClick={this.get_keys}>Keygen</Button>
 				<h3>Public Key</h3>
-				<textarea value={this.state.PublicKey} />
+				<FormControl as='textarea' value={this.state.PublicKey} />
 				<h3>Private Key</h3>
-				<textarea value={this.state.PrivateKey} />
+				<FormControl as='textarea' value={this.state.PrivateKey} />
 			</Container>
 		);
 	}
